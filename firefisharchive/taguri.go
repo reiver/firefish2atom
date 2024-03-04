@@ -12,5 +12,5 @@ import (
 // A longer date formats (that starts with YYYY-MM-DD) can be passed to it,
 // and tagURI will truncate it to just that part.
 func tagURI(internetDomain string, date string, id string) string {
-	return fmt.Sprintf("tag:%s:%s:%s", internetDomain, date[:10], id)
+	return fmt.Sprintf("tag:%s,%s:%s", internetDomain, date[:10], id)
 }
